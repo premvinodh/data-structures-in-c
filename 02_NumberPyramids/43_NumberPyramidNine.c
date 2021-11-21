@@ -1,13 +1,13 @@
 //============================================================================
-// Name        : 38_NumberPyramidSeven.c
+// Name        : 43_NumberPyramidNine.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Develop a program to output the following number pyramid.
-//		5	6	7	8	9
-//			4	5	6	7
-//				3	4	5
-//					2	3
+//		1	0	1	0	1	0	1	0	1
+//			0	1	0	1	0	1	0
+//				1	0	1	0	1
+//					0	1	0
 //						1
 //============================================================================
 
@@ -30,10 +30,23 @@ int main() {
 		for (j = 1; j <= (n - i); j++) {
 			printf("    "); // 4 blank spaces put b for each blank space.
 		}
-		m = i;
+		m = i % 2;
 		for (j = 1; j <= i; j++) {
 			printf("%4d", m);
-			m++;
+			if (m == 0) {
+				m = 1;
+			} else {
+				m = 0;
+			}
+		}
+		m = 0;
+		for (j = 1; j <= i - 1; j++) {
+			printf("%4d", m);
+			if (m == 0) {
+				m = 1;
+			} else {
+				m = 0;
+			}
 		}
 		printf("\n");
 	}

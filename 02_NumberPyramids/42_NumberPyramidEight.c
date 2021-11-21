@@ -1,15 +1,14 @@
 //============================================================================
-// Name        : 33_NumberPyramidTwo.c
+// Name        : 42_NumberPyramidEight.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Develop a program to output the following number pyramid.
-//		0
-//		1	0
-//		0 	1 	0
-//		1	0	1	0
-// 		0	1	0	1	0
-//  	1	0	1	0	1	0
+//		5	6	7	8	9	8	7	6	5
+//			4	5	6	7	6	5	4
+//				3	4	5	4	3
+//					2	3	2
+//						1
 //============================================================================
 
 #include <stdio.h>
@@ -27,15 +26,19 @@ int main() {
 
 	printf("Enter how many lines\n");
 	scanf("%d", &n);
-	for (i = 1; i <= n; i++) {
-		m = i%2;
+	for (i = n; i >= 1; i--) {
+		for (j = 1; j <= (n - i); j++) {
+			printf("    "); // 4 blank spaces put b for each blank space.
+		}
+		m = i;
 		for (j = 1; j <= i; j++) {
-			if (m == 0) {
-				m = 1;
-			} else {
-				m = 0;
-			}
 			printf("%4d", m);
+			m++;
+		}
+		m = m - 2;
+		for (j = 1; j <= i; j++) {
+			printf("%4d", m);
+			m--;
 		}
 		printf("\n");
 	}

@@ -1,14 +1,17 @@
 //============================================================================
-// Name        : 40_NumberPyramidNine.c
+// Name        : 37_NumberPyramidThree.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Develop a program to output the following number pyramid.
-//		1	0	1	0	1	0	1	0	1
-//			0	1	0	1	0	1	0
-//				1	0	1	0	1
-//					0	1	0
-//						1
+//							1
+//						2	3
+//					3 	4 	5
+//				4	5	6	7
+// 			5	6	7	8	9
+// For eg.	bbbb	bbbb	bbbb	bbbb	bbb1 (for i = 1)
+//			bbbb	bbbb	bbbb	bbb2 	bbb3 (for i = 2)
+//	where b is blank space.
 //============================================================================
 
 #include <stdio.h>
@@ -26,27 +29,14 @@ int main() {
 
 	printf("Enter how many lines\n");
 	scanf("%d", &n);
-	for (i = n; i >= 1; i--) {
-		for (j = 1; j <= (n - i); j++) {
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j <= (n-i); j++) {
 			printf("    "); // 4 blank spaces put b for each blank space.
 		}
-		m = i % 2;
-		for (j = 1; j <= i; j++) {
+		m=i;
+		for(j = 1; j <= i; j++) {
 			printf("%4d", m);
-			if (m == 0) {
-				m = 1;
-			} else {
-				m = 0;
-			}
-		}
-		m = 0;
-		for (j = 1; j <= i - 1; j++) {
-			printf("%4d", m);
-			if (m == 0) {
-				m = 1;
-			} else {
-				m = 0;
-			}
+			m++;
 		}
 		printf("\n");
 	}
