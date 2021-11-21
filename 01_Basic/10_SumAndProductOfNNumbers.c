@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 10_SumAndProductOfNNumbers.cpp
+// Name        : 10_SumAndProductOfNNumbers.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

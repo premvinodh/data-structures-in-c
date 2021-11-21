@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 06_LargestOf2Numbers.cpp
+// Name        : 06_LargestOf2Numbers.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

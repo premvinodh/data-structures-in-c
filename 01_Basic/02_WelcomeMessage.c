@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 02_WelcomeMessage.cpp
+// Name        : 02_WelcomeMessage.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

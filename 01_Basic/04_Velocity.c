@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 04_Velocity.cpp
+// Name        : 04_Velocity.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

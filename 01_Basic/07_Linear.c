@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 07_Linear.cpp
+// Name        : 07_Linear.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

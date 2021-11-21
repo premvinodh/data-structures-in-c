@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 05_Discriminant.cpp
+// Name        : 05_Discriminant.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

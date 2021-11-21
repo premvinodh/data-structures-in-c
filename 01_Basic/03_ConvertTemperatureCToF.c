@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 03_ConvertTemperatureCToF.cpp
+// Name        : 03_ConvertTemperatureCToF.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

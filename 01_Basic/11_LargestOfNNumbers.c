@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 11_LargestOfNNumbers.cpp
+// Name        : 11_LargestOfNNumbers.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice

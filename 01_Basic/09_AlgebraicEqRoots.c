@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : 09_AlgebraicEqRoots.cpp
+// Name        : 09_AlgebraicEqRoots.c
 // Author      :
 // Version     :
 // Copyright   : Your copyright notice
