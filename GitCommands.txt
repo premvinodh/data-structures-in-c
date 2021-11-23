@@ -1,0 +1,12 @@
+Rename folder 08_Structures containing files to 08_Structures_Unions
+--------------------------------------------------------------------
+
+$ git ls-files
+$ git mv 08_Structures basicapp_temp
+$ git add .
+$ git commit -am "temporary change"
+$ git push origin master
+$ git mv basicapp_temp 08_Structures_Unions
+$ git add .
+$ git commit -am "Changed 08_Structures to 08_Structures_Unions"
+$ git push origin master
