@@ -10,3 +10,21 @@ $ git mv basicapp_temp 08_Structures_Unions
 $ git add .
 $ git commit -am "Changed 08_Structures to 08_Structures_Unions"
 $ git push origin master
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+How to get certain commit from GitHub project
+---------------------------------------------
+
+First, clone the repository using git, e.g. with:
+
+git clone git://github.com/facebook/facebook-ios-sdk.git
+That downloads the complete history of the repository, so you can switch to any version. Next, change into the newly cloned repository:
+
+cd facebook-ios-sdk
+... and use git checkout <COMMIT> to change to the right commit:
+
+git checkout 91f25642453
+That will give you a warning, since you're no longer on a branch, and have switched directly to a particular version. (This is known as "detached HEAD" state.) Since it sounds as if you only want to use this SDK, rather than actively develop it, this isn't something you need to worry about, unless you're interested in finding out more about how git works.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
